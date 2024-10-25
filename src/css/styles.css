@@ -1,0 +1,31 @@
+h1 { 
+    color: black;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+/* h2 { color: white; } */
+
+body { 
+    background-color: lightgreen;
+    /* background-color: rgba(255, 255, 0, 0.3); */
+}
+
+/* footer { background-color: rgba(0, 0, 255, 0.3); } */
+
+a:link {
+    background-color: lightgreen;
+}
+
+a:hover {
+    background-color: lightgreen;
+}
+
+a:visited {
+    background-color: lightgreen;
+}
+
+a:active {
+    background-color: lightgreen;
+}

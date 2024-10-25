@@ -1,0 +1,119 @@
+<div>
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="tg-dvpl" colspan="4">{{$ctrl.score.date}}</th>
+                <th class="tg-0pky" colspan="2">Weather <strong>{{$ctrl.score.weather}}</strong></th>
+                <th class="tg-0pky">Distance <strong>{{$ctrl.score.distance}}</strong> M</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-0pky">Arrow</td>
+                <td class="tg-c3ow">1</td>
+                <td class="tg-c3ow">2</td>
+                <td class="tg-c3ow">3</td>
+                <td class="tg-0pky">3 arrows</td>
+                <td class="tg-0pky">6 arrows</td>
+                <td class="tg-0pky">Check arrow</td>
+            </tr>
+            <tr>
+                <td class="tg-9wq8" rowspan="2">1</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[0].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[0].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[0].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.one_one_three}}</td>
+                <td class="tg-0pky" rowspan="2">{{$ctrl.one_six}}</td>
+                <td class="tg-0pky" rowspan="4"><i class="fa-solid fa-bullseye"></i></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">{{$ctrl.score.rounds[1].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[1].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[1].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.one_two_three}}</td>
+            </tr>
+            <tr>
+                <td class="tg-9wq8" rowspan="2">2</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[2].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[2].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[2].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.two_one_three}}</td>
+                <td class="tg-0pky" rowspan="2">{{$ctrl.two_six}}</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">{{$ctrl.score.rounds[3].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[3].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[3].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.two_two_three}}</td>
+            </tr>
+            <tr>
+                <td class="tg-9wq8" rowspan="2">3</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[4].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[4].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[4].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.three_one_three}}</td>
+                <td class="tg-0pky" rowspan="2">{{$ctrl.three_six}}</td>
+                <td class="tg-0pky" rowspan="4"><i class="fa-solid fa-bullseye"></i></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">{{$ctrl.score.rounds[5].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[5].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[5].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.three_two_three}}</td>
+            </tr>
+            <tr>
+                <td class="tg-9wq8" rowspan="2">4</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[6].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[6].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[6].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.four_one_three}}</td>
+                <td class="tg-0pky" rowspan="2">{{$ctrl.four_six}}</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">{{$ctrl.score.rounds[7].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[7].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[7].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.four_two_three}}</td>
+            </tr>
+            <tr>
+                <td class="tg-9wq8" rowspan="2">5</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[8].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[8].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[8].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.five_one_three}}</td>
+                <td class="tg-0pky" rowspan="2">{{$ctrl.five_six}}</td>
+                <td class="tg-0pky" rowspan="4"><i class="fa-solid fa-bullseye"></i></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">{{$ctrl.score.rounds[9].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[9].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[9].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.five_two_three}}</td>
+            </tr>
+            <tr>
+                <td class="tg-9wq8" rowspan="2">6</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[10].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[10].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[10].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[10].score1 + $ctrl.score.rounds[10].score2 + $ctrl.score.rounds[10].score3}}</td>
+                <td class="tg-0pky" rowspan="2">{{$ctrl.score.rounds[9].score1 + $ctrl.score.rounds[9].score2 + $ctrl.score.rounds[9].score3 + $ctrl.score.rounds[10].score1 + $ctrl.score.rounds[10].score2 + $ctrl.score.rounds[10].score3}}</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">{{$ctrl.score.rounds[11].score1}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[11].score2}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[11].score3}}</td>
+                <td class="tg-0pky">{{$ctrl.score.rounds[11].score1 + $ctrl.score.rounds[11].score2 + $ctrl.score.rounds[11].score3}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+                <td class="tg-0pky">Total</td>
+                <td class="tg-0pky">{{$ctrl.first}}</td>
+                <td class="tg-0pky">{{$ctrl.second}}</td>
+                <td class="tg-0pky">{{$ctrl.third}}</td>
+                <td class="tg-0pky">{{$ctrl.three_arrows}}</td>
+                <td class="tg-0pky" colspan="2">{{$ctrl.total}}</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
