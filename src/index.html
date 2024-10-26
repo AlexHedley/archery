@@ -16,8 +16,9 @@
         <!-- Components -->
         <link rel="stylesheet" href="components/score/score.component.css" />
         <link rel="stylesheet" href="components/score-alt/score-alt.component.css" />
+        <link rel="stylesheet" href="components/score-creator/score-creator.component.css" />
 
-        <link rel="shortcut icon" href="favicon.ico" />
+        <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
         <!-- Fonts -->
         <!-- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> -->
 
@@ -69,11 +70,15 @@
                         </div>
 
                         <div class="row justify-content-md-center">
-                            <score score="scores[0]"></score>
+                            <div ng-repeat="score in scores">
+                                <score score="score"></score>
+                            </div>
                         </div>
 
                         <div class="row justify-content-md-center">
-                            <score-alt score="scores[0]"></score-alt>
+                            <div ng-repeat="score in scores">
+                                <score-alt score="score"></score-alt>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,6 +95,7 @@
                         <div class="row justify-content-md-center">
                             <div class="col">
                                 <p>In Progress...</p>
+                                <score-creator score="scores[0]"></score-creator>
                             </div>
                         </div>
                     </div>
@@ -120,8 +126,11 @@
         <script src="js/vendor/chartjs/chartjs-plugin-datalabels.min.js"></script> -->
 
         <script src="js/app.js"></script>
+        <!-- Services -->
+        <script src="services/scoreService.js"></script>
         <!-- Components -->
         <script src="components/score/score.component.js"></script>
         <script src="components/score-alt/score-alt.component.js"></script>
+        <script src="components/score-creator/score-creator.component.js"></script>
     </body>
 </html>
