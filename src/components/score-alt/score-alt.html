@@ -1,0 +1,115 @@
+<!-- /* https://www.tablesgenerator.com/html_tables */ -->
+<div>
+
+    <div>
+        <p>{{$ctrl.score.date}} at {{$ctrl.score.weather}} for a distance of {{$ctrl.score.distance}} against a target size of {{$ctrl.score.target}} </p>
+    </div>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="tg-0lax" colspan="3"></th>
+                <th class="tg-0lax">ET</th>
+                <th class="tg-0lax" colspan="3"></th>
+                <th class="tg-0lax">ET</th>
+                <th class="tg-0lax">Score</th>
+                <th class="tg-0lax">Hits</th>
+                <th class="tg-0lax">10's</th>
+                <th class="tg-0lax">Running Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-0lax">{{$ctrl.score.rounds[0].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[0].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[0].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.one_one_three}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[1].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[1].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[1].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.one_two_three}}</td>
+                <td class="tg-0lax">{{$ctrl.one_six}}</td>
+                <td class="tg-0lax">{{$ctrl.hits_one}}</td>
+                <td class="tg-0lax">{{$ctrl.tens_one}}</td>
+                <td class="tg-0lax">{{$ctrl.one_six}}</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">{{$ctrl.score.rounds[2].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[2].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[2].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.two_one_three}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[3].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[3].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[3].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.two_two_three}}</td>
+                <td class="tg-0lax">{{$ctrl.two_six}}</td>
+                <td class="tg-0lax">{{$ctrl.hits_two}}</td>
+                <td class="tg-0lax">{{$ctrl.tens_two}}</td>
+                <td class="tg-0lax">{{$ctrl.one_six + $ctrl.two_six}}</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">{{$ctrl.score.rounds[4].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[4].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[4].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.three_one_three}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[5].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[5].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[5].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.three_two_three}}</td>
+                <td class="tg-0lax">{{$ctrl.three_six}}</td>
+                <td class="tg-0lax">{{$ctrl.hits_three}}</td>
+                <td class="tg-0lax">{{$ctrl.tens_three}}</td>
+                <td class="tg-0lax">{{$ctrl.one_six + $ctrl.two_six + $ctrl.three_six}}</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">{{$ctrl.score.rounds[6].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[6].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[6].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.four_one_three}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[7].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[7].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[7].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.four_two_three}}</td>
+                <td class="tg-0lax">{{$ctrl.four_six}}</td>
+                <td class="tg-0lax">{{$ctrl.hits_four}}</td>
+                <td class="tg-0lax">{{$ctrl.tens_four}}</td>
+                <td class="tg-0lax">{{$ctrl.one_six + $ctrl.two_six + $ctrl.three_six + $ctrl.four_six}}</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">{{$ctrl.score.rounds[8].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[8].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[8].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.five_one_three}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[9].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[9].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[9].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.five_two_three}}</td>
+                <td class="tg-0lax">{{$ctrl.five_six}}</td>
+                <td class="tg-0lax">{{$ctrl.hits_five}}</td>
+                <td class="tg-0lax">{{$ctrl.tens_five}}</td>
+                <td class="tg-0lax">{{$ctrl.one_six + $ctrl.two_six + $ctrl.three_six + $ctrl.four_six + $ctrl.five_six}}</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">{{$ctrl.score.rounds[10].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[10].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[10].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.six_one_three}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[11].score1}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[11].score2}}</td>
+                <td class="tg-0lax">{{$ctrl.score.rounds[11].score3}}</td>
+                <td class="tg-0lax">{{$ctrl.six_two_three}}</td>
+                <td class="tg-0lax">{{$ctrl.six_six}}</td>
+                <td class="tg-0lax">{{$ctrl.hits_six}}</td>
+                <td class="tg-0lax">{{$ctrl.tens_six}}</td>
+                <td class="tg-0lax"><strong>{{$ctrl.one_six + $ctrl.two_six + $ctrl.three_six + $ctrl.four_six + $ctrl.five_six + $ctrl.six_six}}</strong></td>
+            </tr>
+            <tr>
+                <td class="tg-0lax" colspan="8"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

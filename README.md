@@ -8,7 +8,9 @@
 [![AngularJS](https://img.shields.io/badge/AngularJS-E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white)](https://github.com/angular/angular.js)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=for-the-badge)](LICENSE) <!-- https://opensource.org/licenses/MIT -->
 
-> See my Bowling scores from over the years.
+[![Deploy static content to Pages](https://github.com/AlexHedley/archery/actions/workflows/static.yml/badge.svg)](https://github.com/AlexHedley/archery/actions/workflows/static.yml)
+
+> See my Archery scores from over the years.
 
 ## Site
 
@@ -21,6 +23,8 @@
 `cd src`
 
 `py -m http.server`
+
+`cd src && py -m http.server`
 
 - http://localhost:8000/
 
