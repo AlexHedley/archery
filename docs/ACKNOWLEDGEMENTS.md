@@ -11,3 +11,5 @@
 <!-- - [Angular Filter](https://github.com/a8m/angular-filter/) -->
 <!-- - [sorttable](http://www.kryogenix.org/code/browser/sorttable/) -->
 <!-- - [momentjs](https://momentjs.com/) -->
+
+- [Targets](https://archerygeekery.co.uk/2023/05/05/accurate-svg-archery-target-images/) SVGs

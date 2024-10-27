@@ -1,0 +1,57 @@
+<svg version="1.1"
+     baseProfile="full"
+	 style="shape-rendering:geometricPrecision;" 
+	 viewBox="-300 -300 600 600"
+     xmlns="http://www.w3.org/2000/svg">
+  <metadata xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:dcterms="http://purl.org/dc/terms/" 
+          xmlns:dc11="http://purl.org/dc/elements/1.1/"
+          xmlns:cc="http://creativecommons.org/ns#" 
+          xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <rdf:RDF>
+    <cc:Work rdf:about="">
+      <dc11:format>image/svg+xml</dc11:format>
+      <dc11:type    rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      <cc:license rdf:resource="http://opendatacommons.org/licenses/odbl/1.0/"  />
+      <cc:attributionName>ArcheryGeekery</cc:attributionName>
+      <cc:attributionURL  rdf:resource="http://archerygeekery.co.uk" />
+    </cc:Work>
+    <cc:License    rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+      <cc:permits  rdf:resource="http://creativecommons.org/ns#Reproduction" />
+      <cc:permits  rdf:resource="http://creativecommons.org/ns#Distribution" />
+      <cc:permits  rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      <cc:requires rdf:resource="http://creativecommons.org/ns#Notice" />
+      <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" />
+      <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+    </cc:License>
+    <cc:License rdf:about="http://opendatacommons.org/licenses/odbl/1.0/" >
+      <cc:legalcode rdf:resource="http://opendatacommons.org/licenses/odbl/1.0/index.html" />
+      <dcterms:isVersionOf rdf:resource="http://opendatacommons.org/licenses/odbl/" />
+    </cc:License>
+  </rdf:RDF>
+</metadata>
+
+
+	<g id="5spot" stroke-width="1" stroke="white">
+		<circle cx="0" cy="0" r="80.78" fill="black" />
+		<circle cx="0" cy="0" r="40.14" fill="white" />
+		<circle cx="0" cy="0" r="19.82" fill="none"  stroke-width="1" stroke="black" />
+		<line x1="-3" y1="-3" x2="3" y2="3" stroke="black" stroke-width="0.5" />
+		<line x1="-3" y1="3" x2="3" y2="-3" stroke="black" stroke-width="0.5" />
+	</g>
+
+ 	<use href="#5spot" x="-129.1" y="-129.1"/>
+	<use href="#5spot" x="129.1"  y="-129.1"/>
+	<use href="#5spot" x="-129.1" y="129.1"/>
+	<use href="#5spot" x="129.1"  y="129.1"/>
+	
+	<g style="font-size:6mm;font-family:sans-serif;">
+		<text x="-210" y="-190" >1</text>
+		<text x="190" y="-190" >2</text>
+		<text x="-100" y="15" >3</text>
+		<text x="190" y="210" >5</text>
+		<text x="-210" y="210" >4</text>
+	</g>
+
+</svg>
