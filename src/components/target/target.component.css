@@ -1,0 +1,65 @@
+.target-container {
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.wa {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 19px;
+}
+
+.black {
+    background-color: #2b2926;
+    border: 1px solid white;
+}
+
+.blue {
+    background-color: #00bce2;
+}
+
+.red {
+    background-color: #ef3340;
+}
+
+.yellow {
+    background-color: #f9e526;
+}
+
+.ten-ring {
+    padding: 9.5px;
+}
+
+.x-ring {
+    padding: 0;
+}
+
+#lastScore {
+    margin: 55px;
+    font-size: 24px;
+    font-weight: bold;
+}
