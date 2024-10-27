@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="components/score/score.component.css" />
         <link rel="stylesheet" href="components/score-alt/score-alt.component.css" />
         <link rel="stylesheet" href="components/score-creator/score-creator.component.css" />
+        <link rel="stylesheet" href="components/target-alt/target-alt.component.css" />
+        <link rel="stylesheet" href="components/target/target.component.css" />
 
         <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
         <!-- Fonts -->
@@ -34,6 +36,11 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="score-tab" data-bs-toggle="tab" data-bs-target="#score-creator" type="button" role="tab" aria-controls="score-creator" aria-selected="true">
                         Score Creator
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="target-tab" data-bs-toggle="tab" data-bs-target="#target" type="button" role="tab" aria-controls="target" aria-selected="true">
+                        Target
                     </button>
                 </li>
             </ul>
@@ -100,6 +107,32 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Target -->
+                <div class="tab-pane fade" id="target" role="tabpanel" aria-labelledby="target-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>🎯 Target</h2>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center">
+                            <div class="col">
+                                <p>In Progress...</p>
+                                <target-alt></target-alt>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center">
+                            <div class="col">
+                                <p>In Progress...</p>
+                                <target></target>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
 
@@ -132,5 +165,7 @@
         <script src="components/score/score.component.js"></script>
         <script src="components/score-alt/score-alt.component.js"></script>
         <script src="components/score-creator/score-creator.component.js"></script>
+        <script src="components/target-alt/target-alt.component.js"></script>
+        <script src="components/target/target.component.js"></script>
     </body>
 </html>

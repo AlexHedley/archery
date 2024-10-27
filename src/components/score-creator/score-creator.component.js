@@ -6,12 +6,9 @@ function ScoreCreatorController(scoreService) {
     };
 
     this.$onChanges = function (changesObj) {
-        console.log("onchanges");
-
-        console.log(changesObj);
-
+        // console.log("onchanges");
         if (changesObj.score.currentValue) {
-          ctrl.one_one_three = scoreService.oneOneThree(this.score);
+            ctrl.one_one_three = scoreService.oneOneThree(this.score);
         }
     };
 
