@@ -142,6 +142,18 @@ function scoreService() {
 
         return { hits_six, tens_six };
     };
+
+    this.totalHits = function (score) {
+        return this.round1(score).hits_one + this.round2(score).hits_two + this.round3(score).hits_three + this.round4(score).hits_four + this.round5(score).hits_five + this.round6(score).hits_six;
+    }
+
+    this.totalTens = function (score) {
+        return this.round1(score).tens_one + this.round2(score).tens_two + this.round3(score).tens_three + this.round4(score).tens_four + this.round5(score).tens_five + this.round6(score).tens_six;
+    };
+
+    this.summary = function (score) {
+        return { id: score.id, date: score.date, weather: score.weather, distance: score.distance, target: score.target, totalHits: this.totalHits(score), totalTens: this.totalTens(score), total: this.total(score) };
+    }
 }
 
 angular.module("app").service("scoreService", scoreService);

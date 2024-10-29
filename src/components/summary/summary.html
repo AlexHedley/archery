@@ -1,0 +1,35 @@
+<table>
+    <caption>
+        Summaries
+    </caption>
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Date</th>
+            <th scope="col">Weather</th>
+            <th scope="col">Distance</th>
+            <th scope="col">Target</th>
+            <th scope="col">Total Hits</th>
+            <th scope="col">Total Tens</th>
+            <th scope="col">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="summary in $ctrl.summaries">
+            <th scope="row">{{summary.id}}</th>
+            <td>{{summary.date | toDate | date:'mediumDate'}}</td>
+            <td>{{summary.weather}}</td>
+            <td>{{summary.distance}}</td>
+            <td>{{summary.target}}</td>
+            <td>{{summary.totalHits}}</td>
+            <td>{{summary.totalTens}}</td>
+            <td>{{summary.total}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row" colspan="7">Max</th>
+            <td>{{$ctrl.max}}</td>
+        </tr>
+    </tfoot>
+</table>
