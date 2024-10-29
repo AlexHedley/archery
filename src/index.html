@@ -21,7 +21,27 @@
         <link rel="stylesheet" href="components/target-alt/target-alt.component.css" />
         <link rel="stylesheet" href="components/target/target.component.css" />
 
-        <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+        <!-- icons [https://www.favicon-generator.org/] -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.ico" />
+        
         <!-- Fonts -->
         <!-- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> -->
 
@@ -30,6 +50,12 @@
     <body ng-app="app">
         <!-- Begin page content -->
         <main role="main" class="container" ng-controller="controller">
+            <section class="jumbotron title-container text-center">
+                <div class="container">
+                    <img src="images/neil_slorance.jpg" alt="Neil Slorance" width="100px" class="img-thumbnail" />
+                </div>
+            </section>
+
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item active" role="presentation">
                     <button class="nav-link active" id="score-tab" data-bs-toggle="tab" data-bs-target="#score" type="button" role="tab" aria-controls="score" aria-selected="true">Score</button>
@@ -40,9 +66,7 @@
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="target-tab" data-bs-toggle="tab" data-bs-target="#target" type="button" role="tab" aria-controls="target" aria-selected="true">
-                        Target
-                    </button>
+                    <button class="nav-link" id="target-tab" data-bs-toggle="tab" data-bs-target="#target" type="button" role="tab" aria-controls="target" aria-selected="true">Target</button>
                 </li>
             </ul>
 
@@ -84,9 +108,7 @@
                         </div>
 
                         <div class="row justify-content-md-center">
-                            
                             <div ng-repeat="score in scores track by $index">
-
                                 <!-- <ul class="nav nav-tabs" id="tab-scores-tabs" role="tablist">
                                     <li class="nav-item active" role="presentation">
                                         <button class="nav-link active" id="score-{{$index}}" data-bs-toggle="tab" data-bs-target="#score-{{$index}}" type="button" role="tab" aria-controls="score-{{$index}}" aria-selected="true">
@@ -99,21 +121,18 @@
                                         </button>
                                     </li>
                                 </ul> -->
-                                
+
                                 <!-- Tabs -->
                                 <!-- <div class="tab-content" id="tab-scores"> -->
-                                    <!-- <div class="tab-pane fade show active" id="score-{{$index}}" role="tabpanel" aria-labelledby="score-{{$index}}-tab"> -->
-                                        <score score="score"></score>
-                                    <!-- </div> -->
-                                    <!-- <div class="tab-pane fade" id="score-alt-{{$index}}" role="tabpanel" aria-labelledby="score-alt-{{$index}}-tab"> -->
-                                        <score-alt score="score"></score-alt>
-                                    <!-- </div> -->
+                                <!-- <div class="tab-pane fade show active" id="score-{{$index}}" role="tabpanel" aria-labelledby="score-{{$index}}-tab"> -->
+                                <score score="score"></score>
                                 <!-- </div> -->
-
+                                <!-- <div class="tab-pane fade" id="score-alt-{{$index}}" role="tabpanel" aria-labelledby="score-alt-{{$index}}-tab"> -->
+                                <score-alt score="score"></score-alt>
+                                <!-- </div> -->
+                                <!-- </div> -->
                             </div>
-                            
                         </div>
-
                     </div>
                 </div>
 
@@ -159,7 +178,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </main>
 
