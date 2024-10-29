@@ -1,0 +1,22 @@
+<div ng-repeat="score in $ctrl.scores track by $index">
+
+    <ul class="nav nav-tabs" id="{{$index}}" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="score-{{$index}}-tab" data-bs-toggle="tab" data-bs-target="#score-{{$index}}" type="button" role="tab" aria-controls="score-{{$index}}" aria-selected="true">Score</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="score-alt-{{$index}}-tab" data-bs-toggle="tab" data-bs-target="#score-alt-{{$index}}" type="button" role="tab" aria-controls="score-alt-{{$index}}" aria-selected="false">Score (Alt)</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="score-{{$index}}" role="tabpanel" aria-labelledby="score-{{$index}}-tab">
+            <score score="score"></score>
+        </div>
+        <div class="tab-pane fade" id="score-alt-{{$index}}" role="tabpanel" aria-labelledby="score-alt-{{$index}}-tab">
+            <score-alt score="score"></score-alt>
+        </div>
+    </div>
+    
+    <br />
+
+</div>

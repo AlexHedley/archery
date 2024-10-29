@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="components/score-creator/score-creator.component.css" />
         <link rel="stylesheet" href="components/target-alt/target-alt.component.css" />
         <link rel="stylesheet" href="components/target/target.component.css" />
+        <link rel="stylesheet" href="components/scores/scores.component.css" />
 
         <!-- icons [https://www.favicon-generator.org/] -->
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
@@ -63,7 +64,7 @@
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="score-tab" data-bs-toggle="tab" data-bs-target="#score" type="button" role="tab" aria-controls="score" aria-selected="true">Score</button>
+                    <button class="nav-link" id="scores-tab" data-bs-toggle="tab" data-bs-target="#scores" type="button" role="tab" aria-controls="scores" aria-selected="true">Scores</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="score-creator-tab" data-bs-toggle="tab" data-bs-target="#score-creator" type="button" role="tab" aria-controls="score-creator" aria-selected="true">
@@ -83,6 +84,8 @@
                 </li>
             </ul>
 
+            <br />
+
             <!-- Tabs -->
             <div class="tab-content" id="myTabContent">
                 <!-- Summary -->
@@ -94,6 +97,8 @@
                             </div>
                         </div>
 
+                        <br />
+
                         <div class="row justify-content-md-center">
                             <div class="col">
                                 <summary summaries="summaries"></summary>
@@ -103,7 +108,7 @@
                 </div>
 
                 <!-- Scores -->
-                <div class="tab-pane fade" id="score" role="tabpanel" aria-labelledby="score-tab">
+                <div class="tab-pane fade" id="scores" role="tabpanel" aria-labelledby="scores-tab">
                     <section class="jumbotron title-container text-center">
                         <div>
                             <h1>
@@ -131,31 +136,10 @@
                             </div>
                         </div>
 
-                        <div class="row justify-content-md-center">
-                            <div ng-repeat="score in scores track by $index">
-                                <!-- <ul class="nav nav-tabs" id="tab-scores-tabs" role="tablist">
-                                    <li class="nav-item active" role="presentation">
-                                        <button class="nav-link active" id="score-{{$index}}" data-bs-toggle="tab" data-bs-target="#score-{{$index}}" type="button" role="tab" aria-controls="score-{{$index}}" aria-selected="true">
-                                            Score
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="score-alt-{{$index}}" data-bs-toggle="tab" data-bs-target="#score-alt-{{$index}}" type="button" role="tab" aria-controls="score-alt-{{$index}}" aria-selected="true">
-                                            Score Alt
-                                        </button>
-                                    </li>
-                                </ul> -->
+                        <br />
 
-                                <!-- Tabs -->
-                                <!-- <div class="tab-content" id="tab-scores"> -->
-                                <!-- <div class="tab-pane fade show active" id="score-{{$index}}" role="tabpanel" aria-labelledby="score-{{$index}}-tab"> -->
-                                <score score="score"></score>
-                                <!-- </div> -->
-                                <!-- <div class="tab-pane fade" id="score-alt-{{$index}}" role="tabpanel" aria-labelledby="score-alt-{{$index}}-tab"> -->
-                                <score-alt score="score"></score-alt>
-                                <!-- </div> -->
-                                <!-- </div> -->
-                            </div>
+                        <div class="row justify-content-md-center">
+                            <scores scores="scores"></scores>
                         </div>
                     </div>
                 </div>
@@ -168,6 +152,8 @@
                                 <h2>🏹 Score Creator</h2>
                             </div>
                         </div>
+
+                        <br />
 
                         <div class="row justify-content-md-center">
                             <div class="col">
@@ -186,6 +172,8 @@
                                 <h2>🎯 Target</h2>
                             </div>
                         </div>
+
+                        <br />
 
                         <div class="row justify-content-md-center">
                             <div class="col">
@@ -212,6 +200,8 @@
                             </div>
                         </div>
 
+                        <br />
+
                         <div class="row justify-content-md-center">
                             <div class="col">
                                 <p>In Progress...</p>
@@ -230,6 +220,8 @@
                                 <h2>Equipment</h2>
                             </div>
                         </div>
+
+                        <br />
 
                         <div class="row justify-content-md-center">
                             <div class="col">
@@ -274,5 +266,6 @@
         <script src="components/score-creator/score-creator.component.js"></script>
         <script src="components/target-alt/target-alt.component.js"></script>
         <script src="components/target/target.component.js"></script>
+        <script src="components/scores/scores.component.js"></script>
     </body>
 </html>

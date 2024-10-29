@@ -1,5 +1,9 @@
 /* https://www.tablesgenerator.com/html_tables */
 
+.table-alt-score thead th {
+    font-weight: bold;
+}
+
 .tg {
     border-collapse: collapse;
     border-spacing: 0;

@@ -8,12 +8,13 @@
     </div>
 
     <button ng-click="$ctrl.show()">Test</button>
-    <table class="tg">
+    
+    <table id="table-score-creator" class="tg">
         <thead>
             <tr>
-                <th class="tg-dvpl" colspan="4"><input ng-model="$ctrl.score.date" /></th>
-                <th class="tg-0pky" colspan="2">Weather <input ng-model="$ctrl.score.weather" /></th>
-                <th class="tg-0pky">Distance <input ng-model="$ctrl.score.distance" maxlength="2" size="1" /> M | Target <input ng-model="$ctrl.score.target" maxlength="2" size="1" /> cm</th>
+                <th class="tg-dvpl" colspan="4">Date: <input ng-model="$ctrl.score.date" /></th>
+                <th class="tg-0pky" colspan="2">Weather: <input ng-model="$ctrl.score.weather" /></th>
+                <th class="tg-0pky">Distance: <input ng-model="$ctrl.score.distance" maxlength="2" size="1" /> M | Target: <input ng-model="$ctrl.score.target" maxlength="2" size="1" /> cm</th>
             </tr>
         </thead>
         <tbody>
