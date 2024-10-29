@@ -12,9 +12,16 @@
 
 > See my Archery scores from over the years.
 
+<!-- ![Neil Slorance](src/images/neil_slorance.jpg "Neil Slorance") -->
+![Neil Slorance](src/apple-icon-114x114.png "Neil Slorance")
+
 ## Site
 
 - [View Site](https://alexhedley.github.io/archery/)
+
+## Data
+
+Update the [scores.json](src/data/scores.json) in the 📂 _data_ folder.
 
 ---
 

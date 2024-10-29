@@ -41,7 +41,7 @@
         <meta name="theme-color" content="#ffffff" />
 
         <link rel="shortcut icon" href="favicon.ico" />
-        
+
         <!-- Fonts -->
         <!-- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> -->
 
@@ -58,22 +58,47 @@
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item active" role="presentation">
-                    <button class="nav-link active" id="score-tab" data-bs-toggle="tab" data-bs-target="#score" type="button" role="tab" aria-controls="score" aria-selected="true">Score</button>
+                    <button class="nav-link active" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary" type="button" role="tab" aria-controls="summary" aria-selected="true">
+                        Summary
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="score-tab" data-bs-toggle="tab" data-bs-target="#score-creator" type="button" role="tab" aria-controls="score-creator" aria-selected="true">
+                    <button class="nav-link" id="score-tab" data-bs-toggle="tab" data-bs-target="#score" type="button" role="tab" aria-controls="score" aria-selected="true">Score</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="score-creator-tab" data-bs-toggle="tab" data-bs-target="#score-creator" type="button" role="tab" aria-controls="score-creator" aria-selected="true">
                         Score Creator
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="target-tab" data-bs-toggle="tab" data-bs-target="#target" type="button" role="tab" aria-controls="target" aria-selected="true">Target</button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="club-tab" data-bs-toggle="tab" data-bs-target="#club" type="button" role="tab" aria-controls="club" aria-selected="true">Club</button>
+                </li>
             </ul>
 
             <!-- Tabs -->
             <div class="tab-content" id="myTabContent">
+                <!-- Summary -->
+                <div class="tab-pane fade show active" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>🏹 Summary</h2>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center">
+                            <div class="col">
+                                <summary summaries="summaries"></summary>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Scores -->
-                <div class="tab-pane fade show active" id="score" role="tabpanel" aria-labelledby="score-tab">
+                <div class="tab-pane fade" id="score" role="tabpanel" aria-labelledby="score-tab">
                     <section class="jumbotron title-container text-center">
                         <div>
                             <h1>
@@ -98,12 +123,6 @@
                         <div class="row">
                             <div class="col">
                                 <h2>🏹 Stats</h2>
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-md-center">
-                            <div class="col">
-                                <summary summaries="summaries"></summary>
                             </div>
                         </div>
 
@@ -176,6 +195,26 @@
                                 <target></target>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Club -->
+                <div class="tab-pane fade" id="club" role="tabpanel" aria-labelledby="club-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Club</h2>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center">
+                            <div class="col">
+                                <p>In Progress...</p>
+                                <img src="images/north-east-archers.png" alt="North East Archers" />
+                                <p><a href="https://www.northeastarchers.co.uk/" target="_blank">North East Archers</a></p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
