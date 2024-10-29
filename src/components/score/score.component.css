@@ -1,8 +1,8 @@
-/* tr, td {
+.table-score tr, .table-score td {
     border: 1px solid black;
-} */
+}
 
-tr:first-child td {
+.table-score tr:first-child td {
     font-weight: bold;
 }
 
@@ -14,6 +14,7 @@ tfoot td {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 .tg td {
     border-color: black;
     border-style: solid;
@@ -24,6 +25,7 @@ tfoot td {
     padding: 10px 5px;
     word-break: normal;
 }
+
 .tg th {
     border-color: black;
     border-style: solid;
@@ -35,21 +37,25 @@ tfoot td {
     padding: 10px 5px;
     word-break: normal;
 }
+
 .tg .tg-9wq8 {
     border-color: inherit;
     text-align: center;
     vertical-align: middle;
 }
+
 .tg .tg-c3ow {
     border-color: inherit;
     text-align: center;
     vertical-align: middle;
 }
+
 .tg .tg-dvpl {
     border-color: inherit;
     text-align: center;
     vertical-align: middle;
 }
+
 .tg .tg-0pky {
     border-color: inherit;
     text-align: center;

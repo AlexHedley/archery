@@ -2,7 +2,7 @@
 <div>
 
     <div>
-        <p>{{$ctrl.score.date}} at {{$ctrl.score.weather}} for a distance of {{$ctrl.score.distance}} against a target size of {{$ctrl.score.target}} </p>
+        <p>{{$ctrl.score.date | toDate | date:'mediumDate'}} at {{$ctrl.score.weather}} for a distance of {{$ctrl.score.distance}} against a target size of {{$ctrl.score.target}} </p>
     </div>
 
     <table class="tg">

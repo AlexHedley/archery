@@ -1,4 +1,4 @@
-h1 { 
+h1 {
     color: black;
     -webkit-text-fill-color: black; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0.5px;
@@ -7,7 +7,7 @@ h1 {
 
 /* h2 { color: white; } */
 
-body { 
+body {
     background-color: lightgreen;
     /* background-color: rgba(255, 255, 0, 0.3); */
 }
@@ -28,4 +28,20 @@ a:visited {
 
 a:active {
     background-color: lightgreen;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }

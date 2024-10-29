@@ -1,8 +1,8 @@
 <div>
-    <table class="tg">
+    <table class="table-score tg">
         <thead>
             <tr>
-                <th class="tg-dvpl" colspan="4">{{$ctrl.score.date}}</th>
+                <th class="tg-dvpl" colspan="4">{{$ctrl.score.date | toDate | date:'mediumDate'}}</th>
                 <th class="tg-0pky" colspan="2">Weather <strong>{{$ctrl.score.weather}}</strong></th>
                 <th class="tg-0pky">Distance <strong>{{$ctrl.score.distance}}</strong> M</th>
             </tr>
@@ -24,7 +24,10 @@
                 <td class="tg-0pky">{{$ctrl.score.rounds[0].score3}}</td>
                 <td class="tg-0pky">{{$ctrl.one_one_three}}</td>
                 <td class="tg-0pky" rowspan="2">{{$ctrl.one_six}}</td>
-                <td class="tg-0pky" rowspan="4"><i class="fa-solid fa-bullseye"></i></td>
+                <td class="tg-0pky" rowspan="4">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <!-- <target readOnly="true" positions="$ctrl.score.rounds[0]"></target> -->
+                </td>
             </tr>
             <tr>
                 <td class="tg-0pky">{{$ctrl.score.rounds[1].score1}}</td>
@@ -53,7 +56,10 @@
                 <td class="tg-0pky">{{$ctrl.score.rounds[4].score3}}</td>
                 <td class="tg-0pky">{{$ctrl.three_one_three}}</td>
                 <td class="tg-0pky" rowspan="2">{{$ctrl.three_six}}</td>
-                <td class="tg-0pky" rowspan="4"><i class="fa-solid fa-bullseye"></i></td>
+                <td class="tg-0pky" rowspan="4">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <!-- <target readOnly="true"></target> -->
+                </td>
             </tr>
             <tr>
                 <td class="tg-0pky">{{$ctrl.score.rounds[5].score1}}</td>
@@ -82,7 +88,10 @@
                 <td class="tg-0pky">{{$ctrl.score.rounds[8].score3}}</td>
                 <td class="tg-0pky">{{$ctrl.five_one_three}}</td>
                 <td class="tg-0pky" rowspan="2">{{$ctrl.five_six}}</td>
-                <td class="tg-0pky" rowspan="4"><i class="fa-solid fa-bullseye"></i></td>
+                <td class="tg-0pky" rowspan="4">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <!-- <target readOnly="true"></target> -->
+                </td>
             </tr>
             <tr>
                 <td class="tg-0pky">{{$ctrl.score.rounds[9].score1}}</td>
@@ -96,7 +105,10 @@
                 <td class="tg-0pky">{{$ctrl.score.rounds[10].score2}}</td>
                 <td class="tg-0pky">{{$ctrl.score.rounds[10].score3}}</td>
                 <td class="tg-0pky">{{$ctrl.score.rounds[10].score1 + $ctrl.score.rounds[10].score2 + $ctrl.score.rounds[10].score3}}</td>
-                <td class="tg-0pky" rowspan="2">{{$ctrl.score.rounds[9].score1 + $ctrl.score.rounds[9].score2 + $ctrl.score.rounds[9].score3 + $ctrl.score.rounds[10].score1 + $ctrl.score.rounds[10].score2 + $ctrl.score.rounds[10].score3}}</td>
+                <td class="tg-0pky" rowspan="2">
+                    {{$ctrl.score.rounds[9].score1 + $ctrl.score.rounds[9].score2 + $ctrl.score.rounds[9].score3 + $ctrl.score.rounds[10].score1 + $ctrl.score.rounds[10].score2 +
+                    $ctrl.score.rounds[10].score3}}
+                </td>
             </tr>
             <tr>
                 <td class="tg-0pky">{{$ctrl.score.rounds[11].score1}}</td>
@@ -106,7 +118,7 @@
             </tr>
         </tbody>
         <tfoot>
-          <tr>
+            <tr>
                 <td class="tg-0pky">Total</td>
                 <td class="tg-0pky">{{$ctrl.first}}</td>
                 <td class="tg-0pky">{{$ctrl.second}}</td>
