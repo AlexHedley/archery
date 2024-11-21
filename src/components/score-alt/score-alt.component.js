@@ -66,6 +66,43 @@ function ScoreController($scope, scoreService) {
             ctrl.tens_six = ctrl.round6.tens_six;
         }
     };
+
+    function calculateScoreColour(score) {
+        var colour = "";
+        switch (score) {
+            case 0:
+                colour = "green";
+                break;
+            case 1:
+            case 2:
+                colour = "white";
+                break;
+            case 3:
+            case 4:
+                colour = "black";
+                break;
+            case 5:
+            case 6:
+                colour = "blue";
+                break;
+            case 7:
+            case 8:
+                colour = "red";
+                break;
+            case 9:
+            case 10:
+                colour = "gold";
+                break;
+            case 11:
+                colour = "gold";
+                break;
+            default:
+                break;
+        }
+        return colour;
+    }
+
+    this.calculateScoreColour = calculateScoreColour;
 }
 
 angular.module("app").component("scoreAlt", {

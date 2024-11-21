@@ -61,3 +61,28 @@ tfoot td {
     text-align: center;
     vertical-align: middle;
 }
+
+.gold {
+    background-color: gold;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: white;
+}
+
+.green {
+    background-color: lightgreen;
+}
