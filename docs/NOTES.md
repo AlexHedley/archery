@@ -1,5 +1,9 @@
 # Notes
 
+![Scoresheet](images/scores_colours.png "Scoresheet")
+
+![Scoresheet Alt](images/scores_alt_colours.png "Scoresheet Alt")
+
 ![Scoresheet](images/scoresheet.png "Scoresheet")
 
 ![Scoresheet Alt](images/scoresheet-alt.png "Scoresheet Alt")
