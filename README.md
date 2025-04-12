@@ -29,11 +29,14 @@ Update the [scores.json](src/data/scores.json) in the 📂 _data_ folder.
 
 `cd src`
 
-`py -m http.server`
+`py -m http.server -b 127.0.0.1`  
+`python -m http.server -b 127.0.0.1`  
 
-`cd src && py -m http.server`
+`cd src && py -m http.server -b 127.0.0.1`  
+`cd src && python -m http.server -b 127.0.0.1`  
 
 - http://localhost:8000/
+- http://127.0.0.1:8000/
 
 ## Docs
 
