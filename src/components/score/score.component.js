@@ -14,19 +14,19 @@ function ScoreController($scope, scoreService) {
             ctrl.one_six = scoreService.oneSix(this.score);
 
             ctrl.two_one_three = scoreService.twoOneThree(this.score);
-            ctrl.two_two_three = scoreService.twoOneThree(this.score);
+            ctrl.two_two_three = scoreService.twoTwoThree(this.score);
             ctrl.two_six = scoreService.twoSix(this.score);
 
             ctrl.three_one_three = scoreService.threeOneThree(this.score);
-            ctrl.three_two_three = scoreService.threeOneThree(this.score);
+            ctrl.three_two_three = scoreService.threeTwoThree(this.score);
             ctrl.three_six = scoreService.threeSix(this.score);
 
             ctrl.four_one_three = scoreService.fourOneThree(this.score);
-            ctrl.four_two_three = scoreService.fourOneThree(this.score);
+            ctrl.four_two_three = scoreService.fourTwoThree(this.score);
             ctrl.four_six = scoreService.fourSix(this.score);
 
             ctrl.five_one_three = scoreService.fiveOneThree(this.score);
-            ctrl.five_two_three = scoreService.fiveOneThree(this.score);
+            ctrl.five_two_three = scoreService.fiveTwoThree(this.score);
             ctrl.five_six = scoreService.fiveSix(this.score);
 
             ctrl.six_one_three = scoreService.sixOneThree(this.score);
