@@ -10,7 +10,10 @@
             <th scope="col">Distance</th>
             <th scope="col">Target</th>
             <th scope="col">Total Hits</th>
+            <th scope="col">Total Nines</th>
             <th scope="col">Total Tens</th>
+            <th scope="col">Total Xs</th>
+            <th scope="col">Total Golds</th>
             <th scope="col">Total</th>
         </tr>
     </thead>
@@ -22,13 +25,16 @@
             <td>{{summary.distance}}</td>
             <td>{{summary.target}}</td>
             <td>{{summary.totalHits}}</td>
+            <td>{{summary.totalNines}}</td>
             <td>{{summary.totalTens}}</td>
+            <td>{{summary.totalXs}}</td>
+            <td>{{summary.totalGolds}}</td>
             <td>{{summary.total}}</td>
         </tr>
     </tbody>
     <tfoot>
         <tr>
-            <th scope="row" colspan="7">Max</th>
+            <th scope="row" colspan="10">Max</th>
             <td>{{$ctrl.max}}</td>
         </tr>
     </tfoot>

@@ -93,66 +93,100 @@ function scoreService() {
         const round1 = [];
         round1.push(score.rounds[0].score1, score.rounds[0].score2, score.rounds[0].score3, score.rounds[1].score1, score.rounds[1].score2, score.rounds[1].score3);
         const hits_one = round1.filter((s) => s > 0).length;
+        const nines_one = round1.filter((s) => s === 9).length;
         const tens_one = round1.filter((s) => s === 10).length;
+        const xs_one = round1.filter((s) => s === 11).length;
 
-        return { hits_one, tens_one };
+        return { hits_one, nines_one, tens_one, xs_one };
     }
 
     this.round2 = function (score) {
         const round2 = [];
         round2.push(score.rounds[2].score1, score.rounds[2].score2, score.rounds[2].score3, score.rounds[3].score1, score.rounds[3].score2, score.rounds[3].score3);
         const hits_two = round2.filter((s) => s > 0).length;
+        const nines_two = round2.filter((s) => s === 9).length;
         const tens_two = round2.filter((s) => s === 10).length;
+        const xs_two = round2.filter((s) => s === 11).length;
 
-        return { hits_two, tens_two };
+        return { hits_two, nines_two, tens_two, xs_two };
     };
 
     this.round3 = function (score) {
         const round3 = [];
         round3.push(score.rounds[4].score1, score.rounds[4].score2, score.rounds[4].score3, score.rounds[5].score1, score.rounds[5].score2, score.rounds[5].score3);
         const hits_three = round3.filter((s) => s > 0).length;
+        const nines_three = round3.filter((s) => s === 9).length;
         const tens_three = round3.filter((s) => s === 10).length;
+        const xs_three = round3.filter((s) => s === 11).length;
 
-        return { hits_three, tens_three };
+        return { hits_three, nines_three, tens_three, xs_three };
     };
     
     this.round4 = function (score) {
         const round4 = [];
         round4.push(score.rounds[6].score1, score.rounds[6].score2, score.rounds[6].score3, score.rounds[7].score1, score.rounds[7].score2, score.rounds[7].score3);
         const hits_four = round4.filter((s) => s > 0).length;
+        const nines_four = round4.filter((s) => s === 9).length;
         const tens_four = round4.filter((s) => s === 10).length;
+        const xs_four = round4.filter((s) => s === 11).length;
 
-        return { hits_four, tens_four };
+        return { hits_four, nines_four, tens_four, xs_four };
     };
 
     this.round5 = function (score) {
         const round5 = [];
         round5.push(score.rounds[8].score1, score.rounds[8].score2, score.rounds[8].score3, score.rounds[9].score1, score.rounds[9].score2, score.rounds[9].score3);
         const hits_five = round5.filter((s) => s > 0).length;
+        const nines_five = round5.filter((s) => s === 9).length;
         const tens_five = round5.filter((s) => s === 10).length;
+        const xs_five = round5.filter((s) => s === 11).length;
 
-        return { hits_five, tens_five };
+        return { hits_five, nines_five, tens_five, xs_five };
     };
 
     this.round6 = function (score) {
         const round6 = [];
         round6.push(score.rounds[10].score1, score.rounds[10].score2, score.rounds[10].score3, score.rounds[11].score1, score.rounds[11].score2, score.rounds[11].score3);
         const hits_six = round6.filter((s) => s > 0).length;
+        const nines_six = round6.filter((s) => s === 9).length;
         const tens_six = round6.filter((s) => s === 10).length;
+        const xs_six = round6.filter((s) => s === 11).length;
 
-        return { hits_six, tens_six };
+        return { hits_six, nines_six, tens_six, xs_six };
     };
 
     this.totalHits = function (score) {
         return this.round1(score).hits_one + this.round2(score).hits_two + this.round3(score).hits_three + this.round4(score).hits_four + this.round5(score).hits_five + this.round6(score).hits_six;
     }
 
+    this.totalNines = function (score) {
+        return this.round1(score).nines_one + this.round2(score).nines_two + this.round3(score).nines_three + this.round4(score).nines_four + this.round5(score).nines_five + this.round6(score).nines_six;
+    };
+
     this.totalTens = function (score) {
         return this.round1(score).tens_one + this.round2(score).tens_two + this.round3(score).tens_three + this.round4(score).tens_four + this.round5(score).tens_five + this.round6(score).tens_six;
     };
 
+    this.totalXs = function (score) {
+        return this.round1(score).xs_one + this.round2(score).xs_two + this.round3(score).xs_three + this.round4(score).xs_four + this.round5(score).xs_five + this.round6(score).xs_six;
+    };
+
+    this.totalGolds = function (score) {
+        return this.totalTens(score) + this.totalNines(score);
+    }
+
     this.summary = function (score) {
-        return { id: score.id, date: score.date, weather: score.weather, distance: score.distance, target: score.target, totalHits: this.totalHits(score), totalTens: this.totalTens(score), total: this.total(score) };
+        return { id: score.id, 
+            date: score.date, 
+            weather: score.weather, 
+            distance: score.distance, 
+            target: score.target, 
+            totalHits: this.totalHits(score), 
+            totalNines: this.totalNines(score), 
+            totalTens: this.totalTens(score), 
+            totalXs: this.totalXs(score), 
+            totalGolds: this.totalGolds(score), 
+            total: this.total(score) };
     }
 }
 
