@@ -172,7 +172,7 @@ function scoreService() {
     };
 
     this.totalGolds = function (score) {
-        return this.totalTens(score) + this.totalNines(score);
+        return this.totalTens(score) + this.totalNines(score) + this.totalXs(score);
     }
 
     this.summary = function (score) {
