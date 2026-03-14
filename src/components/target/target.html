@@ -1,7 +1,5 @@
 <!-- https://codepen.io/GGalizzi/pen/PogggB -->
-<div id="lastScore">_</div>
-
-<div id="pos">_</div>
+<div id="lastScore">{{ lastScore }}</div>
 
 <div class="target-container" score="M">
     <!-- wa (World Archery) target -->
@@ -36,4 +34,28 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="mt-3">
+    <button ng-click="clearShots()" class="btn btn-secondary btn-sm mb-2">Clear</button>
+    <table class="table table-bordered table-sm" ng-if="shots.length > 0">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="shot in shots track by $index">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ shot }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>{{ total() }}</th>
+            </tr>
+        </tfoot>
+    </table>
 </div>
