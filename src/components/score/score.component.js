@@ -39,6 +39,13 @@ function ScoreController($scope, scoreService) {
 
             ctrl.three_arrows = ""; // ctrl.first + ctrl.second + ctrl.third;
             ctrl.total = scoreService.total(this.score);
+
+            var rounds = this.score.rounds;
+            if (rounds && rounds.length >= 12) {
+                ctrl.shots_check_1 = scoreService.scoresToShots([rounds[0], rounds[1], rounds[2], rounds[3]]);
+                ctrl.shots_check_2 = scoreService.scoresToShots([rounds[4], rounds[5], rounds[6], rounds[7]]);
+                ctrl.shots_check_3 = scoreService.scoresToShots([rounds[8], rounds[9], rounds[10], rounds[11]]);
+            }
         }
     };
 

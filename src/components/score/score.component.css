@@ -86,3 +86,16 @@ tfoot td {
 .green {
     background-color: lightgreen;
 }
+
+.target-sm {
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.target-sm .target-container {
+    transform: scale(0.25);
+    transform-origin: top left;
+    margin: 0;
+}

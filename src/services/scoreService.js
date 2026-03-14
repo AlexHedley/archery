@@ -188,6 +188,30 @@ function scoreService() {
             totalGolds: this.totalGolds(score), 
             total: this.total(score) };
     }
+
+    // Converts an array of round objects into shot position objects for target-readonly.
+    // Each score integer is mapped to the mid-radius of its WA ring; 12 shots are
+    // spread at 30-degree intervals so the pattern looks realistic.
+    this.scoresToShots = function (rounds) {
+        var center = 200;
+        var arrowHalfSize = 5;
+        var scoreRadii = { 0: 215, 1: 190, 2: 171, 3: 152, 4: 133, 5: 114, 6: 95, 7: 76, 8: 57, 9: 38, 10: 24, 11: 10 };
+        var angleStep = (Math.PI * 2) / 12;
+
+        var allScores = [];
+        rounds.forEach(function (round) {
+            allScores.push(round.score1, round.score2, round.score3);
+        });
+
+        return allScores.map(function (val, i) {
+            var scoreStr = val === 11 ? 'X' : val === 0 ? 'M' : String(val);
+            var radius = scoreRadii[val] !== undefined ? scoreRadii[val] : scoreRadii[0];
+            var angle = angleStep * i;
+            var left = Math.round(center + radius * Math.cos(angle) - arrowHalfSize);
+            var top = Math.round(center + radius * Math.sin(angle) - arrowHalfSize);
+            return { score: scoreStr, left: left, top: top };
+        });
+    };
 }
 
 angular.module("app").service("scoreService", scoreService);
