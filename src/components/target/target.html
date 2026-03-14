@@ -48,7 +48,7 @@
         <tbody>
             <tr ng-repeat="shot in shots track by $index">
                 <td>{{ $index + 1 }}</td>
-                <td>{{ shot }}</td>
+                <td>{{ shot.score }}</td>
             </tr>
         </tbody>
         <tfoot>
@@ -58,4 +58,9 @@
             </tr>
         </tfoot>
     </table>
+</div>
+
+<div class="mt-4" ng-if="shots.length > 0">
+    <h5>History</h5>
+    <target-readonly shots="shots"></target-readonly>
 </div>

@@ -1,0 +1,30 @@
+<!-- Non-interactive World Archery target showing historical shot positions -->
+<div class="target-container target-readonly">
+    <!-- wa (World Archery) target - view only -->
+    <div class="wa">
+        <div class="wa">
+            <div class="wa black">
+                <div class="wa black">
+                    <div class="wa blue">
+                        <div class="wa blue">
+                            <div class="wa red">
+                                <div class="wa red">
+                                    <div class="wa yellow">
+                                        <div class="wa yellow ten-ring">
+                                            <div class="wa yellow x-ring"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Historical arrows rendered at stored positions -->
+    <div class="arrow"
+         ng-repeat="shot in $ctrl.shots track by $index"
+         ng-style="{ top: shot.top + 'px', left: shot.left + 'px' }"
+         title="{{ shot.score }}"></div>
+</div>

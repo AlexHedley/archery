@@ -6,9 +6,9 @@ function TargetController($scope) {
 
     $scope.total = function () {
         return $scope.shots.reduce(function (sum, shot) {
-            if (shot === 'X') return sum + 10;
-            if (shot === 'M') return sum + 0;
-            var val = parseInt(shot, 10);
+            if (shot.score === 'X') return sum + 10;
+            if (shot.score === 'M') return sum + 0;
+            var val = parseInt(shot.score, 10);
             return sum + (isNaN(val) ? 0 : val);
         }, 0);
     };
@@ -33,14 +33,14 @@ function TargetController($scope) {
             var left, posX, posY, score, top;
             event.stopPropagation();
             score = $(this).attr("score");
-            $scope.$apply(function () {
-                $scope.lastScore = score;
-                $scope.shots.push(score);
-            });
             posX = $(".target-container").offset().left;
             posY = $(".target-container").offset().top;
             left = event.pageX - posX - 7;
             top = event.pageY - posY - 7;
+            $scope.$apply(function () {
+                $scope.lastScore = score;
+                $scope.shots.push({ score: score, left: left, top: top });
+            });
             return $(".target-container").append("<div class='arrow' style='top: " + top + "px; left: " + left + "px'></div>");
         });
     }).call(this);
