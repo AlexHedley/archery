@@ -2,10 +2,12 @@ var app = angular.module("app", []);
 app.controller("controller", function ($scope, $http, $q, $filter, scoreService) {
     $scope.scores = [];
     $scope.summaries = [];
+    $scope.sampleShots = [];
 
     $scope.init = function () {
         showTab();
         getData();
+        getSampleShots();
     };
 
     getData = () => {
@@ -13,6 +15,13 @@ app.controller("controller", function ($scope, $http, $q, $filter, scoreService)
         $http.get(file).then(function (response) {
             $scope.scores = response.data;
             getSummaries($scope.scores);
+        });
+    };
+
+    const getSampleShots = () => {
+        const file = "data/shots-sample.json";
+        $http.get(file).then(function (response) {
+            $scope.sampleShots = response.data;
         });
     };
 

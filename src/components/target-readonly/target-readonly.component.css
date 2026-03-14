@@ -1,0 +1,4 @@
+.target-readonly {
+    cursor: default;
+    pointer-events: none;
+}
